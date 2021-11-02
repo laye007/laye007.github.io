@@ -21,6 +21,27 @@
 	<link rel="stylesheet" href="vendors/@fortawesome/fontawesome-free/css/all.min.css">
 	<!-- laye CV • STYLES -->
 	<link rel="stylesheet" href="assets/css/main.min.css">
+
+	<script type="text/javascript">
+		//<!-- Disable 
+			function disableselect(e){ 
+			return false 
+		} 
+
+		function reEnable(){ 
+			return true 
+		} 
+
+		//if IE4+ 
+		document.onselectstart=new Function ("return false") 
+		document.oncontextmenu=new Function ("return false") 
+		//if NS6 
+		if (window.sidebar){ 
+		document.onmousedown=disableselect 
+		document.onclick=reEnable 
+		} 
+		//-->
+	</script>	
 </head>
 <!-- START OF Home [index.html] Page -->
 
@@ -30,7 +51,7 @@
 		<div class="container">
 			<a class="navbar-brand" href="index.html#">
 				<img src="assets/icons/logo.svg" height="45" class="mr-2" alt="logo" />
-				<b>laye</b> <span class="text-primary font-weight-bolder">CV</span>
+				<span class="text-primary font-weight-bolder">LAYE</span>
 			</a>
 			<!-- /.navbar-brand -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +71,10 @@
 					<!-- /.nav-item -->
 					<li class="nav-item">
 						<a class="nav-link smooth-scroll" href="index.html#resume">Formations</a>
+					</li>
+					<!-- /.nav-item -->
+					<li class="nav-item">
+						<a class="nav-link smooth-scroll" href="index.html#competence">Competences</a>
 					</li>
 					<!-- /.nav-item -->
 					<li class="nav-item">
@@ -406,10 +431,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="container py-xl-5 py-lg-4 py-md-3 py-3">
+			<div id="competence" class="container py-xl-5 py-lg-4 py-md-3 py-3">
 				<div class="row">
 					<div class="col-lg-6">
-						<div class="h2 my-xl-4 my-lg-4 my-md-3 my-3  font-weight-bold text-uppercase mb-4">COMPÉTENCES DE CODAGE</div>
+						<div class="h2 my-xl-4 my-lg-4 my-md-3 my-3  font-weight-bold text-uppercase mb-4">COMPÉTENCES EN DEV&SYS</div>
 						<div class="row">
 							<div class="col-md-4 col-6 mb-3 text-center">
 								<div class="circle-progress" data-value="0.95">
@@ -726,6 +751,7 @@
 					</div>
 					<!-- /.row -->
 					<div class="row">
+						<!--
 						<div class="col-lg-7">
 							<h4 class="mb-4 font-weight-bold">How Can I Help You?</h4>
 							<form id="contact-form" class="contact-form" action="index.html#" method="post">
@@ -744,21 +770,22 @@
 								<input type="submit" class="btn btn-lg rounded-lg btn-primary mb-0 mt-2" value="Send Message" />
 							</form>
 						</div>
+						-->
 						<div class="col-lg-4 offset-lg-1">
 							<div class="mt-5">
 
 
 								<div class="lead mb-2">
 									<i class="fa fa-map-marked mr-2"></i>
-									2621 W Pico Blvd, Los Angeles
+									Rue 508 Dixinn, Conakry
 								</div>
 								<div class="lead mb-2">
 									<i class="fa fa-envelope mr-2"></i>
-									alex@example.com
+									layesheva@gmail.com
 								</div>
 								<div class="lead mb-2">
 									<i class="fa fa-phone mr-2"></i>
-									+ (231) 456 67 89
+									+ (224) 622 73 88 77
 								</div>
 							</div>
 						</div>
@@ -777,7 +804,7 @@
 				<div class="row">
 					<div class="col-auto text-center">
 						<img class="logo-sm" src="assets/icons/favicon.png" width="50" alt="Logo">
-						© 2020 All rights reserved.
+						© 2021 laye All rights reserved.
 					</div>
 				</div>
 			</div>
